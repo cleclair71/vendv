@@ -8,11 +8,11 @@ router.get('/', async (req, res) => {
   // be sure to include its associated Products
   try {
     const categoryData = await Category.findAll({
-      include: [{ model: Product }],
+      include: [{ model: Product }],  // check if theres errors
     });
     res.status(200).json(categoryData);
   } catch (err) {
-    res.status(500).json(err);
+    res.status(500).json(err); // server error
   }
 });
 
@@ -20,6 +20,7 @@ router.get('/:id', async (req, res) => {
   // find one category by its `id` value
   // be sure to include its associated Products
   try { 
+    // if error restructure - find one find where
     const categoryData = await Category.findByPk(req.params.id, {
       include: [{ model: Product }],
     });
@@ -29,7 +30,7 @@ router.get('/:id', async (req, res) => {
     }
     res.status(200).json(categoryData);
   } catch (err) {
-    res.status(500).json(err);
+    res.status(400).json(err); // user input wrong
   }
 });
 
@@ -58,7 +59,7 @@ router.put('/:id', async (req, res) => {
     }
     res.status(200).json(categoryData);
   } catch (err) {
-    res.status(500).json(err);
+    res.status(400).json(err);
   }
 });
 
@@ -76,7 +77,7 @@ router.delete('/:id', async (req, res) => {
     }
     res.status(200).json(categoryData);
   } catch (err) {
-    res.status(500).json(err);
+    res.status(400).json(err);
   }
 
 

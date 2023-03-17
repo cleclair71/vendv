@@ -1,49 +1,54 @@
-// import important parts of sequelize library
+// Import the required modules from Sequelize library
 const { Model, DataTypes } = require('sequelize');
-// import our database connection from config.js
+
+// Import database connection settings from the config.js file
 const sequelize = require('../config/connection');
 
-// Initialize Product model (table) by extending off Sequelize's Model class
+// Create a new Product model by extending the Sequelize Model class
 class Product extends Model {}
 
-// set up fields and rules for Product model
+// Define the fields and rules for the Product model
 Product.init(
   {
-    // define columns
+    // Define the id column
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
       autoIncrement: true,
-  },
-  product_name: {
-
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
-  price: {
-    type: DataTypes.DECIMAL,
-    allowNull: false,
-    validate: {
-      isDecimal: true,
+    },
+    // Define the product_name column
+    product_name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    // Define the price column
+    price: {
+      type: DataTypes.DECIMAL(10, 2),
+      allowNull: false,
+      validate: {
+        isDecimal: true,
+      },
+    },
+    // Define the stock column
+    stock: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      defaultValue: 10,
+      validate: {
+        isNumeric: true,
+      },
+    },
+    // Define the category_id column and set up a reference to the category table
+    category_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'category',
+        key: 'id',
+      },
     },
   },
-  stock: {
-    type: DataTypes.INTEGER,
-    allowNull: false,
-    defaultValue: 10,
-    validate: {
-      isNumeric: true,
-    },
-  },
-  category_id: {
-    type: DataTypes.INTEGER,
-    references: {
-      model: 'category',
-      key: 'id',
-    },
-  },
-  },
+  // Define the model options
   {
     sequelize,
     timestamps: false,
@@ -53,4 +58,5 @@ Product.init(
   }
 );
 
+// Export the Product model
 module.exports = Product;
