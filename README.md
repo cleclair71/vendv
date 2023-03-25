@@ -1,10 +1,10 @@
   ![GitHub license](https://img.shields.io/badge/license-MIT-pink.svg)
-  ![repo size](https://img.shields.io/github/repo-size/cleclair71/hr-hub?color=yellow)
-  ![commits](https://img.shields.io/github/commit-activity/m/cleclair71/hr-hub/main)
-  ![language](https://img.shields.io/github/languages/top/cleclair71/hr-hub)
-  ![console.table](https://img.shields.io/github/package-json/dependency-version/cleclair71/hr-hub/console.table)
-  ![inquirer](https://img.shields.io/github/package-json/dependency-version/cleclair71/hr-hub/inquirer?color=lime)
-  ![mysql2](https://img.shields.io/github/package-json/dependency-version/cleclair71/hr-hub/mysql2?color=orange)
+  ![repo size](https://img.shields.io/github/repo-size/cleclair71/vendv?color=yellow)
+  ![commits](https://img.shields.io/github/commit-activity/m/cleclair71/vendv/main)
+  ![language](https://img.shields.io/github/languages/top/cleclair71/vendv)
+  ![sequelize](https://img.shields.io/github/package-json/dependency-version/cleclair71/vendv/sequelize)
+  ![inquirer](https://img.shields.io/github/package-json/dependency-version/cleclair71/vendv/inquirer?color=lime)
+  ![mysql2](https://img.shields.io/github/package-json/dependency-version/cleclair71/vendv/mysql2?color=orange)
 
   <a name="readme-top"></a>
  <br />
@@ -74,7 +74,6 @@ DB_PW='your_mysql_password'
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
   <a name="usage"></a>
 
 ## :computer: Usage
@@ -84,6 +83,10 @@ DB_PW='your_mysql_password'
    </div>
    <br />
 
+   <p align="center"> Please see the
+   <a href="https://drive.google.com/file/d/1oZJElx4QXzcGZlfQwMoUEVd9D6Ld_YKO/view?usp=sharing">Walk Through Video</a> that demonstrates the functionality of this application and how all of the acceptance criteria have been met.
+   </p>
+   <br />
 1. Create a development database and seed it with test data
 
 ```bash
@@ -96,9 +99,6 @@ npm start
 ```
 3. Use an API client like Insomnia Core to test API routes
 
-   <p align="center"> Please see the
-   <a href="https://drive.google.com/file/d/1oZJElx4QXzcGZlfQwMoUEVd9D6Ld_YKO/view?usp=sharing">Walk Through Video</a> that demonstrates the functionality of this application and how all of the acceptance criteria have been met.
-   </p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
   
