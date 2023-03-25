@@ -3,7 +3,6 @@
   ![commits](https://img.shields.io/github/commit-activity/m/cleclair71/vendv/main)
   ![language](https://img.shields.io/github/languages/top/cleclair71/vendv)
   ![sequelize](https://img.shields.io/github/package-json/dependency-version/cleclair71/vendv/sequelize)
-  ![inquirer](https://img.shields.io/github/package-json/dependency-version/cleclair71/vendv/inquirer?color=lime)
   ![mysql2](https://img.shields.io/github/package-json/dependency-version/cleclair71/vendv/mysql2?color=orange)
 
   <a name="readme-top"></a>
