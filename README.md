@@ -35,9 +35,6 @@
 
 <a name="description"></a>
 ## :rocket: About The Project
-<p align="center">
-  <img src="assets\Capture.JPG"/>
-</p>
 
 VENDV is a back-end application for an e-commerce website, built with the latest technologies. The application uses Express.js API and Sequelize to interact with a MySQL database.
 
@@ -77,9 +74,6 @@ DB_PW='your_mysql_password'
 
 ## :computer: Usage
 
-<div align="center">
-     <img src="assets\app.gif">
-   </div>
    <br />
 
    <p align="center"> Please see the
