@@ -77,7 +77,7 @@ DB_PW='your_mysql_password'
    <br />
 
    <p align="center"> Please see the
-   <a href="https://drive.google.com/file/d/1wABoMoaxNNmUpL76ygYWsNaVfpiiA2xF/view">Walk Through Video</a> that demonstrates the functionality of this application and how all of the acceptance criteria have been met.
+   <a href="https://drive.google.com/file/d/137HmQQtAyh7LukKJodUjsVVCrSB3Z3SO/view">Walk Through Video</a> that demonstrates the functionality of this application and how all of the acceptance criteria have been met.
    </p>
    <br />
 1. Create a development database and seed it with test data
